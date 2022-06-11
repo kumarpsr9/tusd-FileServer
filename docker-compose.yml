@@ -6,4 +6,6 @@ services:
         - "1080:1080"
       volumes:
         - ./data:/srv/tusd-data/data
+      user: root
+      command: chmod 777 /srv/tusd-data/data
 
